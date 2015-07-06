@@ -129,7 +129,8 @@ class User extends BaseUser
                     && preg_match('`[0-9]{1,}`',$password) // at least 1 number
                 )
             ) {
-                $context->addViolationAtSubPath('plainPassword', 'Password is not valid!', array(), null);
+                $context->addViolationAtSubPath('plainPassword', 'Password is not valid!
+                ', array(), null);
             }
 
             if(strlen(stristr($password, $this->getFirstName())) > 0){
