@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /srv/wealthbot/system/Model/Pas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../css/nv.d3.min.css" rel="stylesheet">
+  <link href="../../../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../../../js/html5shiv.min.js"></script>
+  <script src="../../../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../../../index.html">/srv/wealthbot</a></li>
+        <li><a href="../../index.html">system</a></li>
+        <li><a href="../index.html">Model</a></li>
+        <li><a href="index.html">Pas</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="SystemClientAccount.php.html#7">SystemClientAccount</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TransactionType.php.html#5">TransactionType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClosingMethod.php.html#5">ClosingMethod</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#5">Security</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#5">ArrayCollection</a></td><td class="text-right">7%</td></tr>
+       <tr><td><a href="Repository/BaseRepository.php.html#8">BaseRepository</a></td><td class="text-right">26%</td></tr>
+       <tr><td><a href="Repository/ClientAccountValueRepository.php.html#7">ClientAccountValueRepository</a></td><td class="text-right">41%</td></tr>
+       <tr><td><a href="Repository/LotRepository.php.html#8">LotRepository</a></td><td class="text-right">49%</td></tr>
+       <tr><td><a href="Transaction.php.html#5">Transaction</a></td><td class="text-right">52%</td></tr>
+       <tr><td><a href="Base.php.html#5">Base</a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="Repository/BillItemRepository.php.html#8">BillItemRepository</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Lot.php.html#7">Lot</a></td><td class="text-right">79%</td></tr>
+       <tr><td><a href="ClientAccountValue.php.html#5">ClientAccountValue</a></td><td class="text-right">81%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="ArrayCollection.php.html#5">ArrayCollection</a></td><td class="text-right">1251</td></tr>
+       <tr><td><a href="SystemClientAccount.php.html#7">SystemClientAccount</a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="Transaction.php.html#5">Transaction</a></td><td class="text-right">170</td></tr>
+       <tr><td><a href="Repository/BaseRepository.php.html#8">BaseRepository</a></td><td class="text-right">149</td></tr>
+       <tr><td><a href="Repository/LotRepository.php.html#8">LotRepository</a></td><td class="text-right">97</td></tr>
+       <tr><td><a href="Security.php.html#5">Security</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Lot.php.html#7">Lot</a></td><td class="text-right">49</td></tr>
+       <tr><td><a href="Repository/ClientAccountValueRepository.php.html#7">ClientAccountValueRepository</a></td><td class="text-right">25</td></tr>
+       <tr><td><a href="Base.php.html#5">Base</a></td><td class="text-right">10</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Security.php.html#52"><abbr title="Security::getSecurityTypeId">getSecurityTypeId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#60"><abbr title="Security::isTypeCash">isTypeCash</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#45"><abbr title="Security::setSecurityTypeId">setSecurityTypeId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#40"><abbr title="Security::getSymbol">getSymbol</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#35"><abbr title="Security::setSymbol">setSymbol</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SystemClientAccount.php.html#27"><abbr title="SystemClientAccount::setClientId">setClientId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SystemClientAccount.php.html#34"><abbr title="SystemClientAccount::getClientId">getClientId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SystemClientAccount.php.html#56"><abbr title="SystemClientAccount::getPerformanceInceptionAsDateTime">getPerformanceInceptionAsDateTime</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SystemClientAccount.php.html#65"><abbr title="SystemClientAccount::setStatus">setStatus</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SystemClientAccount.php.html#51"><abbr title="SystemClientAccount::getPerformanceInception">getPerformanceInception</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SystemClientAccount.php.html#46"><abbr title="SystemClientAccount::getAccountNumber">getAccountNumber</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SystemClientAccount.php.html#39"><abbr title="SystemClientAccount::setAccountNumber">setAccountNumber</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#30"><abbr title="Security::getName">getName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#25"><abbr title="Security::setName">setName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/ClientAccountValueRepository.php.html#124"><abbr title="ClientAccountValueRepository::getAllSumByDate">getAllSumByDate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LotRepository.php.html#86"><abbr title="LotRepository::findAllInitialLots">findAllInitialLots</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/ClientAccountValueRepository.php.html#90"><abbr title="ClientAccountValueRepository::update">update</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/ClientAccountValueRepository.php.html#46"><abbr title="ClientAccountValueRepository::getYesterdayValue">getYesterdayValue</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/ClientAccountValueRepository.php.html#27"><abbr title="ClientAccountValueRepository::getTodayValue">getTodayValue</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LotRepository.php.html#108"><abbr title="LotRepository::findAllForClone">findAllForClone</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LotRepository.php.html#140"><abbr title="LotRepository::updateStatus">updateStatus</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LotRepository.php.html#279"><abbr title="LotRepository::updatePositionBy">updatePositionBy</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LotRepository.php.html#239"><abbr title="LotRepository::update">update</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LotRepository.php.html#190"><abbr title="LotRepository::findOnePreviewMFLot">findOnePreviewMFLot</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LotRepository.php.html#167"><abbr title="LotRepository::findAllClosedBy">findAllClosedBy</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SystemClientAccount.php.html#72"><abbr title="SystemClientAccount::getStatus">getStatus</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SystemClientAccount.php.html#77"><abbr title="SystemClientAccount::setClosed">setClosed</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#171"><abbr title="Transaction::getNetAmount">getNetAmount</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#176"><abbr title="Transaction::setLotId">setLotId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#159"><abbr title="Transaction::getGrossAmount">getGrossAmount</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#147"><abbr title="Transaction::getQty">getQty</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#140"><abbr title="Transaction::setQty">setQty</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#183"><abbr title="Transaction::getLotId">getLotId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#195"><abbr title="Transaction::getAccountId">getAccountId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TransactionType.php.html#12"><abbr title="TransactionType::setName">setName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TransactionType.php.html#17"><abbr title="TransactionType::getName">getName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#231"><abbr title="Transaction::getTransactionTypeId">getTransactionTypeId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#219"><abbr title="Transaction::getClosingMethodId">getClosingMethodId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#207"><abbr title="Transaction::getSecurityId">getSecurityId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#130"><abbr title="Transaction::getTxDate">getTxDate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#118"><abbr title="Transaction::getSettleDate">getSettleDate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#34"><abbr title="Transaction::isCreateLot">isCreateLot</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#58"><abbr title="Transaction::getTransactionCode">getTransactionCode</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SystemClientAccount.php.html#98"><abbr title="SystemClientAccount::isClosedExpired">isClosedExpired</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SystemClientAccount.php.html#89"><abbr title="SystemClientAccount::getClosedAsDateTime">getClosedAsDateTime</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SystemClientAccount.php.html#84"><abbr title="SystemClientAccount::getClosed">getClosed</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#70"><abbr title="Transaction::getStatus">getStatus</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#75"><abbr title="Transaction::setCancelStatus">setCancelStatus</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#106"><abbr title="Transaction::getAccruedInterest">getAccruedInterest</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#94"><abbr title="Transaction::getNotes">getNotes</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#87"><abbr title="Transaction::setNotes">setNotes</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#82"><abbr title="Transaction::getCancelStatus">getCancelStatus</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#27"><abbr title="ArrayCollection::toArray">toArray</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/BillItemRepository.php.html#63"><abbr title="BillItemRepository::update">update</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#229"><abbr title="ArrayCollection::set">set</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#237"><abbr title="ArrayCollection::add">add</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#221"><abbr title="ArrayCollection::count">count</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#213"><abbr title="ArrayCollection::getValues">getValues</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#205"><abbr title="ArrayCollection::getKeys">getKeys</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#254"><abbr title="ArrayCollection::isEmpty">isEmpty</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#274"><abbr title="ArrayCollection::__toString">__toString</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Base.php.html#33"><abbr title="Base::getRelations">getRelations</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/BillItemRepository.php.html#27"><abbr title="BillItemRepository::findOneByName">findOneByName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Base.php.html#21"><abbr title="Base::setId">setId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#290"><abbr title="ArrayCollection::slice">slice</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#282"><abbr title="ArrayCollection::clear">clear</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#194"><abbr title="ArrayCollection::get">get</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#186"><abbr title="ArrayCollection::indexOf">indexOf</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#98"><abbr title="ArrayCollection::removeElement">removeElement</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#116"><abbr title="ArrayCollection::offsetExists">offsetExists</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#83"><abbr title="ArrayCollection::remove">remove</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#75"><abbr title="ArrayCollection::current">current</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#67"><abbr title="ArrayCollection::prev">prev</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#126"><abbr title="ArrayCollection::offsetGet">offsetGet</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#136"><abbr title="ArrayCollection::offsetSet">offsetSet</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#173"><abbr title="ArrayCollection::exists">exists</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#165"><abbr title="ArrayCollection::contains">contains</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#157"><abbr title="ArrayCollection::containsKey">containsKey</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#149"><abbr title="ArrayCollection::offsetUnset">offsetUnset</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientAccountValue.php.html#31"><abbr title="ClientAccountValue::setDate">setDate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientAccountValue.php.html#61"><abbr title="ClientAccountValue::setTotalInSecurities">setTotalInSecurities</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#51"><abbr title="ArrayCollection::key">key</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/BaseRepository.php.html#147"><abbr title="BaseRepository::bind">bind</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/BaseRepository.php.html#91"><abbr title="BaseRepository::findBy">findBy</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/BaseRepository.php.html#79"><abbr title="BaseRepository::findAll">findAll</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/BaseRepository.php.html#69"><abbr title="BaseRepository::findOneBy">findOneBy</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/BaseRepository.php.html#156"><abbr title="BaseRepository::commit">commit</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#43"><abbr title="ArrayCollection::last">last</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/BaseRepository.php.html#176"><abbr title="BaseRepository::setDebug">setDebug</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/BaseRepository.php.html#171"><abbr title="BaseRepository::getBuilder">getBuilder</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/BaseRepository.php.html#166"><abbr title="BaseRepository::beginTransaction">beginTransaction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/BaseRepository.php.html#161"><abbr title="BaseRepository::rollback">rollback</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#59"><abbr title="ArrayCollection::next">next</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/BaseRepository.php.html#59"><abbr title="BaseRepository::find">find</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#109"><abbr title="Lot::isSell">isSell</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#128"><abbr title="Lot::getSymbol">getSymbol</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClosingMethod.php.html#17"><abbr title="ClosingMethod::getName">getName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClosingMethod.php.html#12"><abbr title="ClosingMethod::setName">setName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientAccountValue.php.html#71"><abbr title="ClientAccountValue::setTotalCashInMoneyMarket">setTotalCashInMoneyMarket</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#147"><abbr title="Lot::getTransactionCode">getTransactionCode</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#246"><abbr title="Lot::isInitial">isInitial</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#271"><abbr title="Lot::calcPrice">calcPrice</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#266"><abbr title="Lot::isClosed">isClosed</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#256"><abbr title="Lot::isOpen">isOpen</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#341"><abbr title="Lot::setPositionId">setPositionId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LotRepository.php.html#126"><abbr title="LotRepository::updateRebalancerDiff">updateRebalancerDiff</a></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="Base.php.html#54"><abbr title="Base::__set">__set</a></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Repository/BaseRepository.php.html#120"><abbr title="BaseRepository::bindCollection">bindCollection</a></a></td><td class="text-right">61%</td></tr>
+       <tr><td><a href="Repository/LotRepository.php.html#30"><abbr title="LotRepository::getAllQuery">getAllQuery</a></a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Repository/BaseRepository.php.html#91"><abbr title="BaseRepository::findBy">findBy</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#237"><abbr title="ArrayCollection::add">add</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#173"><abbr title="ArrayCollection::exists">exists</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#83"><abbr title="ArrayCollection::remove">remove</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="SystemClientAccount.php.html#98"><abbr title="SystemClientAccount::isClosedExpired">isClosedExpired</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Repository/LotRepository.php.html#30"><abbr title="LotRepository::getAllQuery">getAllQuery</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Repository/LotRepository.php.html#140"><abbr title="LotRepository::updateStatus">updateStatus</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="SystemClientAccount.php.html#56"><abbr title="SystemClientAccount::getPerformanceInceptionAsDateTime">getPerformanceInceptionAsDateTime</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Transaction.php.html#34"><abbr title="Transaction::isCreateLot">isCreateLot</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="SystemClientAccount.php.html#89"><abbr title="SystemClientAccount::getClosedAsDateTime">getClosedAsDateTime</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Security.php.html#60"><abbr title="Security::isTypeCash">isTypeCash</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Lot.php.html#271"><abbr title="Lot::calcPrice">calcPrice</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#136"><abbr title="ArrayCollection::offsetSet">offsetSet</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#98"><abbr title="ArrayCollection::removeElement">removeElement</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#157"><abbr title="ArrayCollection::containsKey">containsKey</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ArrayCollection.php.html#194"><abbr title="ArrayCollection::get">get</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Base.php.html#54"><abbr title="Base::__set">__set</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Repository/BaseRepository.php.html#120"><abbr title="BaseRepository::bindCollection">bindCollection</abbr></a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 3.0-gdf88fdf</a> using <a href="http://php.net/" target="_top">PHP 5.6.10-1+deb.sury.org~trusty+1</a> and <a href="http://phpunit.de/">PHPUnit 4.5.1</a> at Mon Jul 6 0:36:19 EDT 2015.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../../../js/holder.min.js" type="text/javascript"></script>
+  <script src="../../../js/d3.min.js" type="text/javascript"></script>
+  <script src="../../../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([4,1,0,1,0,2,1,0,3,1,0,1], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([105,0,0,0,1,0,0,2,0,1,0,78], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[7.2727272727273,39,"<a href=\"ArrayCollection.php.html#5\">ArrayCollection<\/a>"],[72.222222222222,9,"<a href=\"Base.php.html#5\">Base<\/a>"],[81.25,18,"<a href=\"ClientAccountValue.php.html#5\">ClientAccountValue<\/a>"],[0,2,"<a href=\"ClosingMethod.php.html#5\">ClosingMethod<\/a>"],[79.245283018868,37,"<a href=\"Lot.php.html#7\">Lot<\/a>"],[26,18,"<a href=\"Repository\/BaseRepository.php.html#8\">BaseRepository<\/a>"],[75,5,"<a href=\"Repository\/BillItemRepository.php.html#8\">BillItemRepository<\/a>"],[41.379310344828,9,"<a href=\"Repository\/ClientAccountValueRepository.php.html#7\">ClientAccountValueRepository<\/a>"],[49.63503649635,24,"<a href=\"Repository\/LotRepository.php.html#8\">LotRepository<\/a>"],[100,2,"<a href=\"Repository\/RebalancerQueueRepository.php.html#5\">RebalancerQueueRepository<\/a>"],[0,8,"<a href=\"Security.php.html#5\">Security<\/a>"],[0,16,"<a href=\"SystemClientAccount.php.html#7\">SystemClientAccount<\/a>"],[52,35,"<a href=\"Transaction.php.html#5\">Transaction<\/a>"],[0,2,"<a href=\"TransactionType.php.html#5\">TransactionType<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"ArrayCollection.php.html#19\">ArrayCollection::__construct<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#27\">ArrayCollection::toArray<\/a>"],[100,1,"<a href=\"ArrayCollection.php.html#35\">ArrayCollection::first<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#43\">ArrayCollection::last<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#51\">ArrayCollection::key<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#59\">ArrayCollection::next<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#67\">ArrayCollection::prev<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#75\">ArrayCollection::current<\/a>"],[0,3,"<a href=\"ArrayCollection.php.html#83\">ArrayCollection::remove<\/a>"],[0,2,"<a href=\"ArrayCollection.php.html#98\">ArrayCollection::removeElement<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#116\">ArrayCollection::offsetExists<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#126\">ArrayCollection::offsetGet<\/a>"],[0,2,"<a href=\"ArrayCollection.php.html#136\">ArrayCollection::offsetSet<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#149\">ArrayCollection::offsetUnset<\/a>"],[0,2,"<a href=\"ArrayCollection.php.html#157\">ArrayCollection::containsKey<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#165\">ArrayCollection::contains<\/a>"],[0,3,"<a href=\"ArrayCollection.php.html#173\">ArrayCollection::exists<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#186\">ArrayCollection::indexOf<\/a>"],[0,2,"<a href=\"ArrayCollection.php.html#194\">ArrayCollection::get<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#205\">ArrayCollection::getKeys<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#213\">ArrayCollection::getValues<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#221\">ArrayCollection::count<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#229\">ArrayCollection::set<\/a>"],[0,3,"<a href=\"ArrayCollection.php.html#237\">ArrayCollection::add<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#254\">ArrayCollection::isEmpty<\/a>"],[100,1,"<a href=\"ArrayCollection.php.html#264\">ArrayCollection::getIterator<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#274\">ArrayCollection::__toString<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#282\">ArrayCollection::clear<\/a>"],[0,1,"<a href=\"ArrayCollection.php.html#290\">ArrayCollection::slice<\/a>"],[100,1,"<a href=\"Base.php.html#12\">Base::getId<\/a>"],[0,1,"<a href=\"Base.php.html#21\">Base::setId<\/a>"],[0,1,"<a href=\"Base.php.html#33\">Base::getRelations<\/a>"],[100,2,"<a href=\"Base.php.html#43\">Base::loadFromArray<\/a>"],[60,3,"<a href=\"Base.php.html#54\">Base::__set<\/a>"],[100,1,"<a href=\"Base.php.html#62\">Base::anonymous function<\/a>"],[100,1,"<a href=\"ClientAccountValue.php.html#19\">ClientAccountValue::__construct<\/a>"],[0,1,"<a href=\"ClientAccountValue.php.html#31\">ClientAccountValue::setDate<\/a>"],[100,1,"<a href=\"ClientAccountValue.php.html#36\">ClientAccountValue::getDate<\/a>"],[100,1,"<a href=\"ClientAccountValue.php.html#41\">ClientAccountValue::setClientPortfolioId<\/a>"],[100,1,"<a href=\"ClientAccountValue.php.html#46\">ClientAccountValue::getClientPortfolioId<\/a>"],[100,1,"<a href=\"ClientAccountValue.php.html#51\">ClientAccountValue::setSystemClientAccountId<\/a>"],[100,1,"<a href=\"ClientAccountValue.php.html#56\">ClientAccountValue::getSystemClientAccountId<\/a>"],[0,1,"<a href=\"ClientAccountValue.php.html#61\">ClientAccountValue::setTotalInSecurities<\/a>"],[100,1,"<a href=\"ClientAccountValue.php.html#66\">ClientAccountValue::getTotalInSecurities<\/a>"],[0,1,"<a href=\"ClientAccountValue.php.html#71\">ClientAccountValue::setTotalCashInMoneyMarket<\/a>"],[100,1,"<a href=\"ClientAccountValue.php.html#76\">ClientAccountValue::getTotalCashInMoneyMarket<\/a>"],[100,1,"<a href=\"ClientAccountValue.php.html#81\">ClientAccountValue::setTotalValue<\/a>"],[100,1,"<a href=\"ClientAccountValue.php.html#88\">ClientAccountValue::getTotalValue<\/a>"],[100,1,"<a href=\"ClientAccountValue.php.html#93\">ClientAccountValue::getTotalCashInAccount<\/a>"],[100,1,"<a href=\"ClientAccountValue.php.html#98\">ClientAccountValue::getSasCash<\/a>"],[100,1,"<a href=\"ClientAccountValue.php.html#103\">ClientAccountValue::getCashBuffer<\/a>"],[100,1,"<a href=\"ClientAccountValue.php.html#108\">ClientAccountValue::getBillingCash<\/a>"],[100,1,"<a href=\"ClientAccountValue.php.html#113\">ClientAccountValue::getSource<\/a>"],[0,1,"<a href=\"ClosingMethod.php.html#12\">ClosingMethod::setName<\/a>"],[0,1,"<a href=\"ClosingMethod.php.html#17\">ClosingMethod::getName<\/a>"],[100,1,"<a href=\"Lot.php.html#58\">Lot::__construct<\/a>"],[100,1,"<a href=\"Lot.php.html#63\">Lot::setWasRebalancerDiff<\/a>"],[100,1,"<a href=\"Lot.php.html#70\">Lot::getWasRebalancerDiff<\/a>"],[100,1,"<a href=\"Lot.php.html#75\">Lot::setClientSystemAccountId<\/a>"],[100,1,"<a href=\"Lot.php.html#82\">Lot::getClientSystemAccountId<\/a>"],[100,1,"<a href=\"Lot.php.html#87\">Lot::setSecurityId<\/a>"],[100,1,"<a href=\"Lot.php.html#94\">Lot::getSecurityId<\/a>"],[100,1,"<a href=\"Lot.php.html#99\">Lot::isMF<\/a>"],[100,1,"<a href=\"Lot.php.html#104\">Lot::isBuy<\/a>"],[0,1,"<a href=\"Lot.php.html#109\">Lot::isSell<\/a>"],[100,1,"<a href=\"Lot.php.html#118\">Lot::setSymbol<\/a>"],[0,1,"<a href=\"Lot.php.html#128\">Lot::getSymbol<\/a>"],[100,1,"<a href=\"Lot.php.html#137\">Lot::setTransactionCode<\/a>"],[0,1,"<a href=\"Lot.php.html#147\">Lot::getTransactionCode<\/a>"],[100,1,"<a href=\"Lot.php.html#152\">Lot::setCostBasis<\/a>"],[100,1,"<a href=\"Lot.php.html#159\">Lot::getCostBasis<\/a>"],[100,1,"<a href=\"Lot.php.html#168\">Lot::setAmount<\/a>"],[100,1,"<a href=\"Lot.php.html#178\">Lot::getAmount<\/a>"],[100,1,"<a href=\"Lot.php.html#188\">Lot::setQuantity<\/a>"],[100,1,"<a href=\"Lot.php.html#198\">Lot::getQuantity<\/a>"],[100,1,"<a href=\"Lot.php.html#207\">Lot::setDate<\/a>"],[100,1,"<a href=\"Lot.php.html#217\">Lot::getDate<\/a>"],[100,1,"<a href=\"Lot.php.html#226\">Lot::setStatus<\/a>"],[100,1,"<a href=\"Lot.php.html#236\">Lot::getStatus<\/a>"],[0,1,"<a href=\"Lot.php.html#246\">Lot::isInitial<\/a>"],[0,1,"<a href=\"Lot.php.html#256\">Lot::isOpen<\/a>"],[0,1,"<a href=\"Lot.php.html#266\">Lot::isClosed<\/a>"],[0,2,"<a href=\"Lot.php.html#271\">Lot::calcPrice<\/a>"],[100,1,"<a href=\"Lot.php.html#284\">Lot::setWasClosed<\/a>"],[100,1,"<a href=\"Lot.php.html#294\">Lot::getWasClosed<\/a>"],[100,1,"<a href=\"Lot.php.html#303\">Lot::setRealizedGain<\/a>"],[100,1,"<a href=\"Lot.php.html#313\">Lot::getRealizedGain<\/a>"],[100,1,"<a href=\"Lot.php.html#322\">Lot::setInitialLotId<\/a>"],[100,1,"<a href=\"Lot.php.html#332\">Lot::getInitialLotId<\/a>"],[0,1,"<a href=\"Lot.php.html#341\">Lot::setPositionId<\/a>"],[100,1,"<a href=\"Lot.php.html#351\">Lot::getPositionId<\/a>"],[100,1,"<a href=\"Repository\/BaseRepository.php.html#45\">BaseRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/BaseRepository.php.html#59\">BaseRepository::find<\/a>"],[0,1,"<a href=\"Repository\/BaseRepository.php.html#69\">BaseRepository::findOneBy<\/a>"],[0,1,"<a href=\"Repository\/BaseRepository.php.html#79\">BaseRepository::findAll<\/a>"],[0,5,"<a href=\"Repository\/BaseRepository.php.html#91\">BaseRepository::findBy<\/a>"],[61.538461538462,3,"<a href=\"Repository\/BaseRepository.php.html#120\">BaseRepository::bindCollection<\/a>"],[0,1,"<a href=\"Repository\/BaseRepository.php.html#147\">BaseRepository::bind<\/a>"],[0,1,"<a href=\"Repository\/BaseRepository.php.html#156\">BaseRepository::commit<\/a>"],[0,1,"<a href=\"Repository\/BaseRepository.php.html#161\">BaseRepository::rollback<\/a>"],[0,1,"<a href=\"Repository\/BaseRepository.php.html#166\">BaseRepository::beginTransaction<\/a>"],[0,1,"<a href=\"Repository\/BaseRepository.php.html#171\">BaseRepository::getBuilder<\/a>"],[0,1,"<a href=\"Repository\/BaseRepository.php.html#176\">BaseRepository::setDebug<\/a>"],[100,1,"<a href=\"Repository\/BillItemRepository.php.html#10\">BillItemRepository::getOptions<\/a>"],[100,1,"<a href=\"Repository\/BillItemRepository.php.html#18\">BillItemRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/BillItemRepository.php.html#27\">BillItemRepository::findOneByName<\/a>"],[100,1,"<a href=\"Repository\/BillItemRepository.php.html#37\">BillItemRepository::findOneByAccountAndPeriod<\/a>"],[0,1,"<a href=\"Repository\/BillItemRepository.php.html#63\">BillItemRepository::update<\/a>"],[100,1,"<a href=\"Repository\/ClientAccountValueRepository.php.html#9\">ClientAccountValueRepository::getOptions<\/a>"],[100,1,"<a href=\"Repository\/ClientAccountValueRepository.php.html#17\">ClientAccountValueRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/ClientAccountValueRepository.php.html#27\">ClientAccountValueRepository::getTodayValue<\/a>"],[0,1,"<a href=\"Repository\/ClientAccountValueRepository.php.html#46\">ClientAccountValueRepository::getYesterdayValue<\/a>"],[100,1,"<a href=\"Repository\/ClientAccountValueRepository.php.html#66\">ClientAccountValueRepository::insert<\/a>"],[0,1,"<a href=\"Repository\/ClientAccountValueRepository.php.html#90\">ClientAccountValueRepository::update<\/a>"],[100,2,"<a href=\"Repository\/ClientAccountValueRepository.php.html#107\">ClientAccountValueRepository::save<\/a>"],[0,1,"<a href=\"Repository\/ClientAccountValueRepository.php.html#124\">ClientAccountValueRepository::getAllSumByDate<\/a>"],[100,1,"<a href=\"Repository\/LotRepository.php.html#10\">LotRepository::getOptions<\/a>"],[100,1,"<a href=\"Repository\/LotRepository.php.html#21\">LotRepository::__construct<\/a>"],[88.571428571429,9,"<a href=\"Repository\/LotRepository.php.html#30\">LotRepository::getAllQuery<\/a>"],[0,1,"<a href=\"Repository\/LotRepository.php.html#86\">LotRepository::findAllInitialLots<\/a>"],[0,1,"<a href=\"Repository\/LotRepository.php.html#108\">LotRepository::findAllForClone<\/a>"],[33.333333333333,1,"<a href=\"Repository\/LotRepository.php.html#126\">LotRepository::updateRebalancerDiff<\/a>"],[0,2,"<a href=\"Repository\/LotRepository.php.html#140\">LotRepository::updateStatus<\/a>"],[100,1,"<a href=\"Repository\/LotRepository.php.html#153\">LotRepository::findAllBy<\/a>"],[0,1,"<a href=\"Repository\/LotRepository.php.html#167\">LotRepository::findAllClosedBy<\/a>"],[0,1,"<a href=\"Repository\/LotRepository.php.html#190\">LotRepository::findOnePreviewMFLot<\/a>"],[100,1,"<a href=\"Repository\/LotRepository.php.html#212\">LotRepository::insert<\/a>"],[0,1,"<a href=\"Repository\/LotRepository.php.html#239\">LotRepository::update<\/a>"],[100,2,"<a href=\"Repository\/LotRepository.php.html#257\">LotRepository::save<\/a>"],[0,1,"<a href=\"Repository\/LotRepository.php.html#279\">LotRepository::updatePositionBy<\/a>"],[100,1,"<a href=\"Repository\/RebalancerQueueRepository.php.html#7\">RebalancerQueueRepository::getOptions<\/a>"],[100,1,"<a href=\"Repository\/RebalancerQueueRepository.php.html#15\">RebalancerQueueRepository::__construct<\/a>"],[0,1,"<a href=\"Security.php.html#25\">Security::setName<\/a>"],[0,1,"<a href=\"Security.php.html#30\">Security::getName<\/a>"],[0,1,"<a href=\"Security.php.html#35\">Security::setSymbol<\/a>"],[0,1,"<a href=\"Security.php.html#40\">Security::getSymbol<\/a>"],[0,1,"<a href=\"Security.php.html#45\">Security::setSecurityTypeId<\/a>"],[0,1,"<a href=\"Security.php.html#52\">Security::getSecurityTypeId<\/a>"],[0,2,"<a href=\"Security.php.html#60\">Security::isTypeCash<\/a>"],[0,1,"<a href=\"SystemClientAccount.php.html#27\">SystemClientAccount::setClientId<\/a>"],[0,1,"<a href=\"SystemClientAccount.php.html#34\">SystemClientAccount::getClientId<\/a>"],[0,1,"<a href=\"SystemClientAccount.php.html#39\">SystemClientAccount::setAccountNumber<\/a>"],[0,1,"<a href=\"SystemClientAccount.php.html#46\">SystemClientAccount::getAccountNumber<\/a>"],[0,1,"<a href=\"SystemClientAccount.php.html#51\">SystemClientAccount::getPerformanceInception<\/a>"],[0,2,"<a href=\"SystemClientAccount.php.html#56\">SystemClientAccount::getPerformanceInceptionAsDateTime<\/a>"],[0,1,"<a href=\"SystemClientAccount.php.html#65\">SystemClientAccount::setStatus<\/a>"],[0,1,"<a href=\"SystemClientAccount.php.html#72\">SystemClientAccount::getStatus<\/a>"],[0,1,"<a href=\"SystemClientAccount.php.html#77\">SystemClientAccount::setClosed<\/a>"],[0,1,"<a href=\"SystemClientAccount.php.html#84\">SystemClientAccount::getClosed<\/a>"],[0,2,"<a href=\"SystemClientAccount.php.html#89\">SystemClientAccount::getClosedAsDateTime<\/a>"],[0,3,"<a href=\"SystemClientAccount.php.html#98\">SystemClientAccount::isClosedExpired<\/a>"],[100,1,"<a href=\"Transaction.php.html#29\">Transaction::__construct<\/a>"],[0,2,"<a href=\"Transaction.php.html#34\">Transaction::isCreateLot<\/a>"],[100,1,"<a href=\"Transaction.php.html#39\">Transaction::isMFEE<\/a>"],[100,1,"<a href=\"Transaction.php.html#48\">Transaction::setTransactionCode<\/a>"],[0,1,"<a href=\"Transaction.php.html#58\">Transaction::getTransactionCode<\/a>"],[100,1,"<a href=\"Transaction.php.html#63\">Transaction::setStatus<\/a>"],[0,1,"<a href=\"Transaction.php.html#70\">Transaction::getStatus<\/a>"],[0,1,"<a href=\"Transaction.php.html#75\">Transaction::setCancelStatus<\/a>"],[0,1,"<a href=\"Transaction.php.html#82\">Transaction::getCancelStatus<\/a>"],[0,1,"<a href=\"Transaction.php.html#87\">Transaction::setNotes<\/a>"],[0,1,"<a href=\"Transaction.php.html#94\">Transaction::getNotes<\/a>"],[100,1,"<a href=\"Transaction.php.html#99\">Transaction::setAccruedInterest<\/a>"],[0,1,"<a href=\"Transaction.php.html#106\">Transaction::getAccruedInterest<\/a>"],[100,1,"<a href=\"Transaction.php.html#111\">Transaction::setSettleDate<\/a>"],[0,1,"<a href=\"Transaction.php.html#118\">Transaction::getSettleDate<\/a>"],[100,1,"<a href=\"Transaction.php.html#123\">Transaction::setTxDate<\/a>"],[0,1,"<a href=\"Transaction.php.html#130\">Transaction::getTxDate<\/a>"],[100,1,"<a href=\"Transaction.php.html#135\">Transaction::getTxDateAsDateTime<\/a>"],[0,1,"<a href=\"Transaction.php.html#140\">Transaction::setQty<\/a>"],[0,1,"<a href=\"Transaction.php.html#147\">Transaction::getQty<\/a>"],[100,1,"<a href=\"Transaction.php.html#152\">Transaction::setGrossAmount<\/a>"],[0,1,"<a href=\"Transaction.php.html#159\">Transaction::getGrossAmount<\/a>"],[100,1,"<a href=\"Transaction.php.html#164\">Transaction::setNetAmount<\/a>"],[0,1,"<a href=\"Transaction.php.html#171\">Transaction::getNetAmount<\/a>"],[0,1,"<a href=\"Transaction.php.html#176\">Transaction::setLotId<\/a>"],[0,1,"<a href=\"Transaction.php.html#183\">Transaction::getLotId<\/a>"],[100,1,"<a href=\"Transaction.php.html#188\">Transaction::setAccountId<\/a>"],[0,1,"<a href=\"Transaction.php.html#195\">Transaction::getAccountId<\/a>"],[100,1,"<a href=\"Transaction.php.html#200\">Transaction::setSecurityId<\/a>"],[0,1,"<a href=\"Transaction.php.html#207\">Transaction::getSecurityId<\/a>"],[100,1,"<a href=\"Transaction.php.html#212\">Transaction::setClosingMethodId<\/a>"],[0,1,"<a href=\"Transaction.php.html#219\">Transaction::getClosingMethodId<\/a>"],[100,1,"<a href=\"Transaction.php.html#224\">Transaction::setTransactionTypeId<\/a>"],[0,1,"<a href=\"Transaction.php.html#231\">Transaction::getTransactionTypeId<\/a>"],[0,1,"<a href=\"TransactionType.php.html#12\">TransactionType::setName<\/a>"],[0,1,"<a href=\"TransactionType.php.html#17\">TransactionType::getName<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

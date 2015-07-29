@@ -4,7 +4,7 @@ vagrantfile:
         box: puphpet/ubuntu1404-x64
         box_url: puphpet/ubuntu1404-x64
         hostname: local-webo
-        memory: '1024'
+        memory: '2048'
         cpus: '2'
         chosen_provider: virtualbox
         network:

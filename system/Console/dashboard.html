@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /srv/wealthbot/system/Console</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../css/nv.d3.min.css" rel="stylesheet">
+  <link href="../../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../../js/html5shiv.min.js"></script>
+  <script src="../../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../../index.html">/srv/wealthbot</a></li>
+        <li><a href="../index.html">system</a></li>
+        <li><a href="index.html">Console</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="WealthbotRebalancer.php.html#40">WealthbotRebalancer</a></td><td class="text-right">83%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="WealthbotRebalancer.php.html#40">WealthbotRebalancer</a></td><td class="text-right">249</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="WealthbotRebalancer.php.html#209"><abbr title="WealthbotRebalancer::fakeStart">fakeStart</a></a></td><td class="text-right">2%</td></tr>
+       <tr><td><a href="WealthbotRebalancer.php.html#951"><abbr title="WealthbotRebalancer::buyRequiredCash">buyRequiredCash</a></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="WealthbotRebalancer.php.html#886"><abbr title="WealthbotRebalancer::buySecurity">buySecurity</a></a></td><td class="text-right">56%</td></tr>
+       <tr><td><a href="WealthbotRebalancer.php.html#1053"><abbr title="WealthbotRebalancer::washSale">washSale</a></a></td><td class="text-right">57%</td></tr>
+       <tr><td><a href="WealthbotRebalancer.php.html#1034"><abbr title="WealthbotRebalancer::checkShortTermGain">checkShortTermGain</a></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="WealthbotRebalancer.php.html#1127"><abbr title="WealthbotRebalancer::checkTransaction">checkTransaction</a></a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="WealthbotRebalancer.php.html#823"><abbr title="WealthbotRebalancer::sellLot">sellLot</a></a></td><td class="text-right">86%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="WealthbotRebalancer.php.html#951"><abbr title="WealthbotRebalancer::buyRequiredCash">buyRequiredCash</abbr></a></td><td class="text-right">21</td></tr>
+       <tr><td><a href="WealthbotRebalancer.php.html#1127"><abbr title="WealthbotRebalancer::checkTransaction">checkTransaction</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="WealthbotRebalancer.php.html#209"><abbr title="WealthbotRebalancer::fakeStart">fakeStart</abbr></a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="WealthbotRebalancer.php.html#886"><abbr title="WealthbotRebalancer::buySecurity">buySecurity</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="WealthbotRebalancer.php.html#1053"><abbr title="WealthbotRebalancer::washSale">washSale</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="WealthbotRebalancer.php.html#823"><abbr title="WealthbotRebalancer::sellLot">sellLot</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="WealthbotRebalancer.php.html#1034"><abbr title="WealthbotRebalancer::checkShortTermGain">checkShortTermGain</abbr></a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 3.0-gdf88fdf</a> using <a href="http://php.net/" target="_top">PHP 5.6.10-1+deb.sury.org~trusty+1</a> and <a href="http://phpunit.de/">PHPUnit 4.5.1</a> at Sun Jul 5 23:43:06 EDT 2015.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../../js/holder.min.js" type="text/javascript"></script>
+  <script src="../../js/d3.min.js" type="text/javascript"></script>
+  <script src="../../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,1,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([0,1,0,0,1,0,2,0,0,3,0,32], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[83.067729083665,146,"<a href=\"WealthbotRebalancer.php.html#40\">WealthbotRebalancer<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"WealthbotRebalancer.php.html#89\">WealthbotRebalancer::__construct<\/a>"],[100,1,"<a href=\"WealthbotRebalancer.php.html#105\">WealthbotRebalancer::initRepositories<\/a>"],[100,1,"<a href=\"WealthbotRebalancer.php.html#127\">WealthbotRebalancer::addRepository<\/a>"],[100,2,"<a href=\"WealthbotRebalancer.php.html#141\">WealthbotRebalancer::getRepository<\/a>"],[100,1,"<a href=\"WealthbotRebalancer.php.html#153\">WealthbotRebalancer::getBusinessCalendarManager<\/a>"],[100,1,"<a href=\"WealthbotRebalancer.php.html#163\">WealthbotRebalancer::getClient<\/a>"],[100,1,"<a href=\"WealthbotRebalancer.php.html#173\">WealthbotRebalancer::getJob<\/a>"],[100,1,"<a href=\"WealthbotRebalancer.php.html#183\">WealthbotRebalancer::getRebalancerQueue<\/a>"],[100,1,"<a href=\"WealthbotRebalancer.php.html#193\">WealthbotRebalancer::getRebalancerAction<\/a>"],[100,2,"<a href=\"WealthbotRebalancer.php.html#198\">WealthbotRebalancer::start<\/a>"],[2.1276595744681,3,"<a href=\"WealthbotRebalancer.php.html#209\">WealthbotRebalancer::fakeStart<\/a>"],[100,2,"<a href=\"WealthbotRebalancer.php.html#291\">WealthbotRebalancer::startForJob<\/a>"],[100,2,"<a href=\"WealthbotRebalancer.php.html#304\">WealthbotRebalancer::startForRebalancerAction<\/a>"],[100,2,"<a href=\"WealthbotRebalancer.php.html#323\">WealthbotRebalancer::startForClient<\/a>"],[100,5,"<a href=\"WealthbotRebalancer.php.html#360\">WealthbotRebalancer::rebalancingTrigger<\/a>"],[100,6,"<a href=\"WealthbotRebalancer.php.html#382\">WealthbotRebalancer::liquidateAccountIfNeed<\/a>"],[100,2,"<a href=\"WealthbotRebalancer.php.html#422\">WealthbotRebalancer::checkCashNeeds<\/a>"],[100,2,"<a href=\"WealthbotRebalancer.php.html#435\">WealthbotRebalancer::prepareAccount<\/a>"],[100,3,"<a href=\"WealthbotRebalancer.php.html#488\">WealthbotRebalancer::prepareCollection<\/a>"],[100,5,"<a href=\"WealthbotRebalancer.php.html#517\">WealthbotRebalancer::rebalance<\/a>"],[100,3,"<a href=\"WealthbotRebalancer.php.html#544\">WealthbotRebalancer::accountRebalance<\/a>"],[100,1,"<a href=\"WealthbotRebalancer.php.html#565\">WealthbotRebalancer::householdRebalance<\/a>"],[100,8,"<a href=\"WealthbotRebalancer.php.html#579\">WealthbotRebalancer::getBuyAndSellLimit<\/a>"],[100,10,"<a href=\"WealthbotRebalancer.php.html#624\">WealthbotRebalancer::operateSubclasses<\/a>"],[100,3,"<a href=\"WealthbotRebalancer.php.html#684\">WealthbotRebalancer::sellSubclassHousehold<\/a>"],[100,9,"<a href=\"WealthbotRebalancer.php.html#717\">WealthbotRebalancer::sellSubclass<\/a>"],[100,4,"<a href=\"WealthbotRebalancer.php.html#768\">WealthbotRebalancer::buySubclassHousehold<\/a>"],[100,2,"<a href=\"WealthbotRebalancer.php.html#801\">WealthbotRebalancer::buySubclass<\/a>"],[86.486486486486,5,"<a href=\"WealthbotRebalancer.php.html#823\">WealthbotRebalancer::sellLot<\/a>"],[56.666666666667,5,"<a href=\"WealthbotRebalancer.php.html#886\">WealthbotRebalancer::buySecurity<\/a>"],[100,5,"<a href=\"WealthbotRebalancer.php.html#932\">WealthbotRebalancer::isBuyMuni<\/a>"],[33.333333333333,7,"<a href=\"WealthbotRebalancer.php.html#951\">WealthbotRebalancer::buyRequiredCash<\/a>"],[100,10,"<a href=\"WealthbotRebalancer.php.html#993\">WealthbotRebalancer::checkTlh<\/a>"],[80,3,"<a href=\"WealthbotRebalancer.php.html#1034\">WealthbotRebalancer::checkShortTermGain<\/a>"],[57.142857142857,4,"<a href=\"WealthbotRebalancer.php.html#1053\">WealthbotRebalancer::washSale<\/a>"],[100,3,"<a href=\"WealthbotRebalancer.php.html#1078\">WealthbotRebalancer::checkShortTermRedemption<\/a>"],[100,4,"<a href=\"WealthbotRebalancer.php.html#1093\">WealthbotRebalancer::generateTradeFile<\/a>"],[86.363636363636,12,"<a href=\"WealthbotRebalancer.php.html#1127\">WealthbotRebalancer::checkTransaction<\/a>"],[100,4,"<a href=\"WealthbotRebalancer.php.html#1172\">WealthbotRebalancer::setRebalanceActionStatus<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

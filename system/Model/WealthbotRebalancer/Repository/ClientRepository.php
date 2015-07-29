@@ -57,12 +57,12 @@ class ClientRepository extends BaseRepository {
                 WHERE c.roles LIKE :roles AND c.email = :email AND c.enabled = 1
                 LIMIT 1
         ";
-var_dump($sql);
+//var_dump($sql);
         $parameters = array(
             'email' => $email,
             'roles' => '%ROLE_CLIENT%'
         );
-var_dump($parameters);
+//var_dump($parameters);
         $result = $this->db->query($sql, $parameters);
 
         $collection = $this->bindCollection($result);

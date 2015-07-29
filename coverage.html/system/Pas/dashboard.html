@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /srv/wealthbot/system/Pas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../css/nv.d3.min.css" rel="stylesheet">
+  <link href="../../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../../js/html5shiv.min.js"></script>
+  <script src="../../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../../index.html">/srv/wealthbot</a></li>
+        <li><a href="../index.html">system</a></li>
+        <li><a href="index.html">Pas</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Pas.php.html#7">Pas</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#20">Lot</a></td><td class="text-right">15%</td></tr>
+       <tr><td><a href="Lot/Buy.php.html#9">Buy</a></td><td class="text-right">16%</td></tr>
+       <tr><td><a href="Lot/AbstractLot.php.html#11">AbstractLot</a></td><td class="text-right">17%</td></tr>
+       <tr><td><a href="Transaction.php.html#18">Transaction</a></td><td class="text-right">24%</td></tr>
+       <tr><td><a href="TwrCalculator/Functions.php.html#5">Functions</a></td><td class="text-right">80%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Lot.php.html#20">Lot</a></td><td class="text-right">829</td></tr>
+       <tr><td><a href="Transaction.php.html#18">Transaction</a></td><td class="text-right">339</td></tr>
+       <tr><td><a href="Lot/AbstractLot.php.html#11">AbstractLot</a></td><td class="text-right">54</td></tr>
+       <tr><td><a href="Lot/Buy.php.html#9">Buy</a></td><td class="text-right">36</td></tr>
+       <tr><td><a href="Pas.php.html#7">Pas</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="TwrCalculator/Functions.php.html#5">Functions</a></td><td class="text-right">8</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Pas.php.html#33"><abbr title="Pas::getRepository">getRepository</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#28"><abbr title="Transaction::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pas.php.html#19"><abbr title="Pas::addRepository">addRepository</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#25"><abbr title="Lot::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot/AbstractLot.php.html#39"><abbr title="AbstractLot::compareRebalancerQueue">compareRebalancerQueue</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TwrCalculator/Functions.php.html#69"><abbr title="Functions::calculateCashFlow">calculateCashFlow</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#47"><abbr title="Transaction::getSecurity">getSecurity</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#156"><abbr title="Transaction::run">run</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#71"><abbr title="Transaction::getAccount">getAccount</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#63"><abbr title="Transaction::getClosingMethod">getClosingMethod</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#55"><abbr title="Transaction::getTransactionType">getTransactionType</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot/AbstractLot.php.html#29"><abbr title="AbstractLot::dividedLot">dividedLot</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot/AbstractLot.php.html#24"><abbr title="AbstractLot::openLot">openLot</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#61"><abbr title="Lot::generateClones">generateClones</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#50"><abbr title="Lot::getAccount">getAccount</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#42"><abbr title="Lot::getSecurity">getSecurity</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#33"><abbr title="Lot::initRepositories">initRepositories</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#106"><abbr title="Lot::run">run</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#127"><abbr title="Lot::getLotHash">getLotHash</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot/AbstractLot.php.html#19"><abbr title="AbstractLot::closedLot">closedLot</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#209"><abbr title="Lot::generatePosition">generatePosition</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#162"><abbr title="Lot::createPosition">createPosition</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot.php.html#149"><abbr title="Lot::setPositionIdForLots">setPositionIdForLots</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transaction.php.html#137"><abbr title="Transaction::process">process</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lot/Buy.php.html#20"><abbr title="Buy::create">create</a></a></td><td class="text-right">8%</td></tr>
+       <tr><td><a href="Transaction.php.html#37"><abbr title="Transaction::initRepositories">initRepositories</a></a></td><td class="text-right">14%</td></tr>
+       <tr><td><a href="Transaction.php.html#104"><abbr title="Transaction::create">create</a></a></td><td class="text-right">61%</td></tr>
+       <tr><td><a href="Transaction.php.html#84"><abbr title="Transaction::updateFeeCollected">updateFeeCollected</a></a></td><td class="text-right">62%</td></tr>
+       <tr><td><a href="TwrCalculator/Functions.php.html#55"><abbr title="Functions::calculateAnnualizedTwr">calculateAnnualizedTwr</a></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="TwrCalculator/Functions.php.html#16"><abbr title="Functions::calculateTodayTwr">calculateTodayTwr</a></a></td><td class="text-right">75%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Lot.php.html#162"><abbr title="Lot::createPosition">createPosition</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Lot/Buy.php.html#20"><abbr title="Buy::create">create</abbr></a></td><td class="text-right">33</td></tr>
+       <tr><td><a href="Lot.php.html#106"><abbr title="Lot::run">run</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Lot.php.html#209"><abbr title="Lot::generatePosition">generatePosition</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Lot/AbstractLot.php.html#39"><abbr title="AbstractLot::compareRebalancerQueue">compareRebalancerQueue</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Lot.php.html#127"><abbr title="Lot::getLotHash">getLotHash</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Transaction.php.html#156"><abbr title="Transaction::run">run</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Transaction.php.html#137"><abbr title="Transaction::process">process</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Transaction.php.html#63"><abbr title="Transaction::getClosingMethod">getClosingMethod</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Transaction.php.html#104"><abbr title="Transaction::create">create</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Transaction.php.html#55"><abbr title="Transaction::getTransactionType">getTransactionType</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Transaction.php.html#71"><abbr title="Transaction::getAccount">getAccount</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Pas.php.html#33"><abbr title="Pas::getRepository">getRepository</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Lot.php.html#61"><abbr title="Lot::generateClones">generateClones</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Lot.php.html#50"><abbr title="Lot::getAccount">getAccount</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Transaction.php.html#47"><abbr title="Transaction::getSecurity">getSecurity</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Lot.php.html#149"><abbr title="Lot::setPositionIdForLots">setPositionIdForLots</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Lot.php.html#42"><abbr title="Lot::getSecurity">getSecurity</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Transaction.php.html#84"><abbr title="Transaction::updateFeeCollected">updateFeeCollected</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="TwrCalculator/Functions.php.html#16"><abbr title="Functions::calculateTodayTwr">calculateTodayTwr</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="TwrCalculator/Functions.php.html#55"><abbr title="Functions::calculateAnnualizedTwr">calculateAnnualizedTwr</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 3.0-gdf88fdf</a> using <a href="http://php.net/" target="_top">PHP 5.6.10-1+deb.sury.org~trusty+1</a> and <a href="http://phpunit.de/">PHPUnit 4.5.1</a> at Mon Jul 6 0:36:19 EDT 2015.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../../js/holder.min.js" type="text/javascript"></script>
+  <script src="../../js/d3.min.js" type="text/javascript"></script>
+  <script src="../../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([1,0,3,1,0,0,0,0,0,1,0,1], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([24,1,1,0,0,0,0,3,1,0,0,9], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[15.094339622642,36,"<a href=\"Lot.php.html#20\">Lot<\/a>"],[17.647058823529,9,"<a href=\"Lot\/AbstractLot.php.html#11\">AbstractLot<\/a>"],[16,7,"<a href=\"Lot\/Buy.php.html#9\">Buy<\/a>"],[100,5,"<a href=\"Lot\/Factory.php.html#5\">Factory<\/a>"],[0,3,"<a href=\"Pas.php.html#7\">Pas<\/a>"],[24.63768115942,27,"<a href=\"Transaction.php.html#18\">Transaction<\/a>"],[80,8,"<a href=\"TwrCalculator\/Functions.php.html#5\">Functions<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Lot.php.html#25\">Lot::__construct<\/a>"],[0,1,"<a href=\"Lot.php.html#33\">Lot::initRepositories<\/a>"],[0,2,"<a href=\"Lot.php.html#42\">Lot::getSecurity<\/a>"],[0,2,"<a href=\"Lot.php.html#50\">Lot::getAccount<\/a>"],[0,2,"<a href=\"Lot.php.html#61\">Lot::generateClones<\/a>"],[100,2,"<a href=\"Lot.php.html#80\">Lot::process<\/a>"],[0,5,"<a href=\"Lot.php.html#106\">Lot::run<\/a>"],[0,4,"<a href=\"Lot.php.html#127\">Lot::getLotHash<\/a>"],[0,2,"<a href=\"Lot.php.html#149\">Lot::setPositionIdForLots<\/a>"],[0,10,"<a href=\"Lot.php.html#162\">Lot::createPosition<\/a>"],[0,5,"<a href=\"Lot.php.html#209\">Lot::generatePosition<\/a>"],[100,1,"<a href=\"Lot\/AbstractLot.php.html#13\">AbstractLot::__construct<\/a>"],[0,1,"<a href=\"Lot\/AbstractLot.php.html#19\">AbstractLot::closedLot<\/a>"],[0,1,"<a href=\"Lot\/AbstractLot.php.html#24\">AbstractLot::openLot<\/a>"],[0,1,"<a href=\"Lot\/AbstractLot.php.html#29\">AbstractLot::dividedLot<\/a>"],[0,4,"<a href=\"Lot\/AbstractLot.php.html#39\">AbstractLot::compareRebalancerQueue<\/a>"],[100,1,"<a href=\"Lot\/AbstractLot.php.html#63\">AbstractLot::create<\/a>"],[100,1,"<a href=\"Lot\/Buy.php.html#11\">Buy::__construct<\/a>"],[8.695652173913,6,"<a href=\"Lot\/Buy.php.html#20\">Buy::create<\/a>"],[100,2,"<a href=\"Lot\/Factory.php.html#9\">Factory::make<\/a>"],[100,1,"<a href=\"Lot\/Factory.php.html#19\">Factory::__construct<\/a>"],[100,1,"<a href=\"Lot\/Factory.php.html#20\">Factory::__clone<\/a>"],[100,1,"<a href=\"Lot\/Factory.php.html#21\">Factory::__wakeup<\/a>"],[0,1,"<a href=\"Pas.php.html#19\">Pas::addRepository<\/a>"],[0,2,"<a href=\"Pas.php.html#33\">Pas::getRepository<\/a>"],[0,1,"<a href=\"Transaction.php.html#28\">Transaction::__construct<\/a>"],[14.285714285714,1,"<a href=\"Transaction.php.html#37\">Transaction::initRepositories<\/a>"],[0,2,"<a href=\"Transaction.php.html#47\">Transaction::getSecurity<\/a>"],[0,2,"<a href=\"Transaction.php.html#55\">Transaction::getTransactionType<\/a>"],[0,3,"<a href=\"Transaction.php.html#63\">Transaction::getClosingMethod<\/a>"],[0,2,"<a href=\"Transaction.php.html#71\">Transaction::getAccount<\/a>"],[62.5,3,"<a href=\"Transaction.php.html#84\">Transaction::updateFeeCollected<\/a>"],[61.111111111111,7,"<a href=\"Transaction.php.html#104\">Transaction::create<\/a>"],[0,3,"<a href=\"Transaction.php.html#137\">Transaction::process<\/a>"],[0,3,"<a href=\"Transaction.php.html#156\">Transaction::run<\/a>"],[75,3,"<a href=\"TwrCalculator\/Functions.php.html#16\">Functions::calculateTodayTwr<\/a>"],[100,2,"<a href=\"TwrCalculator\/Functions.php.html#33\">Functions::calculateActualTwr<\/a>"],[66.666666666667,2,"<a href=\"TwrCalculator\/Functions.php.html#55\">Functions::calculateAnnualizedTwr<\/a>"],[0,1,"<a href=\"TwrCalculator\/Functions.php.html#69\">Functions::calculateCashFlow<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

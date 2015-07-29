@@ -32,6 +32,7 @@ class Pas
      */
     public function getRepository($name)
     {
+
         if (isset($this->repositories[$name])) {
             return $this->repositories[$name];
         }

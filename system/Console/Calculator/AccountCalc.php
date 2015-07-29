@@ -13,7 +13,7 @@ class Accountcalc extends Base
 
    public function processRawData($data) {
 		if (\Config::$DEBUG == 2) {
-			var_dump(count($data));
+			//var_dump(count($data));
 			var_export($data[0]);
 		}
 		foreach($data as $index => $item) {

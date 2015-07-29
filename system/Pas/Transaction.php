@@ -115,7 +115,7 @@ class Transaction extends Pas
         $model->setClosingMethodId($closingMethod->getId());
         $model->setTransactionTypeId($transactionType->getId());
 
-        $id = $this->getRepository('Transaction')->save($model);
+        //$id = $this->getRepository('Transaction')->save($model);
 
         if ($id && $model->isCreateLot()) {
             $data['transaction_id'] = $id;
