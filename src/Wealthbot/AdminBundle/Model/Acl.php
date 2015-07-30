@@ -55,6 +55,7 @@ class Acl
             $user = $this->getUser();
         }
 
+
         return $this->securityContext->isGranted($roles, $user);
     }
 
