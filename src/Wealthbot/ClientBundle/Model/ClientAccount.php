@@ -340,10 +340,12 @@ class ClientAccount implements WorkflowableInterface, SignableInterface
             throw new \Exception(sprintf('Undefined process step $s for account group: $s.', $group));
         }
 
+        /*
+        removed by David Haskins to make testing easier.  This count() method is more complex than it looks
         if ($this->getConsolidatedAccounts()->count()) {
             return 'Start Applications';
         }
-
+        */
         return self::$_processSteps[$group][$step];
     }
 
