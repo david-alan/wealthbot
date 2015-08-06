@@ -41,6 +41,7 @@ class BaselinePortfolio
             $model = '80/20';
         }
 
+return $model;
         $arr = array_flip(self::$models);
 
         return $arr[$model];
